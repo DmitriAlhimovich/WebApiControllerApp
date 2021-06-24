@@ -13,6 +13,7 @@ namespace WebApiControllerApp
             WebHost.CreateDefaultBuilder()
                 .ConfigureServices(services => services.AddMvc())
                 .Configure(app => app.UseMvc())
+                .UseUrls("https://localhost:44555")
                 .Build()
                 .Run();
 
